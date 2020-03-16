@@ -4,20 +4,19 @@ using System.Windows.Forms;
 
 namespace Task1_19003041_PROG6211
 {
-    public partial class WeatherForecaster : Form
+    public partial class WeatherForecaster : Weather
     {
         public WeatherForecaster()
         {
             InitializeComponent();
         }
 
-        private Weather vars = new Weather();
         private bool valuesGood = true;
         private ArrayList citiesSelected = new ArrayList();
 
         private void WeatherForecaster_Load(object sender, EventArgs e)
         {
-            vars.populateArrayLists(); //Add Test Values
+            populateArrayLists(); //Add Test Values
             populateCityComboBox(); //Populate Combo box with Test Values
             citiesSelected.Add("Cape Town"); //Test cities selected
             citiesSelected.Add("Johannesburg"); //Test cities selected
@@ -39,20 +38,20 @@ namespace Task1_19003041_PROG6211
             if (valuesGood == true && cityBox.Text != "")
             {
                 //Add values to relevant arrays if data is input correctly
-                vars.addMinTemp(minTempBox.Text);
-                vars.addMaxTemp(maxTempBox.Text);
-                vars.addPrecipitation(precipBox.Text);
-                vars.addHumidity(humidBox.Text);
-                vars.addWindSpeed(windBox.Text);
+                addMinTemp(minTempBox.Text);
+                addMaxTemp(maxTempBox.Text);
+                addPrecipitation(precipBox.Text);
+                addHumidity(humidBox.Text);
+                addWindSpeed(windBox.Text);
                 if (cityBox.Items.Contains(cityBox.Text))
                 {
-                    vars.addCityName(cityBox.Items[cityBox.Items.IndexOf(cityBox.Text)]);
+                    addCityName(cityBox.Items[cityBox.Items.IndexOf(cityBox.Text)]);
                 }
                 else
                 {
-                    vars.addCityName(cityBox.Text);
+                    addCityName(cityBox.Text);
                 }
-                vars.addWeatherDate(dateInputBox.Value);
+                addWeatherDate(dateInputBox.Value);
                 populateCityComboBox();
                 reportTable.Rows.Clear();
                 MessageBox.Show("Data Captured Successfully.");
@@ -254,14 +253,14 @@ namespace Task1_19003041_PROG6211
         private void populateCityComboBox()
         {
             cityComboBox.Items.Clear();
-            for (int i = 0; i < (vars.getCityNameCount()); i++)
+            for (int i = 0; i < (getCityNameCount()); i++)
             {
-                if (cityComboBox.Items.Contains(vars.getCityName(i)))
+                if (cityComboBox.Items.Contains(getCityName(i)))
                 {
                 }
                 else
                 {
-                    cityComboBox.Items.Add(vars.getCityName(i));
+                    cityComboBox.Items.Add(getCityName(i));
                 }
             }
         }
@@ -339,81 +338,81 @@ namespace Task1_19003041_PROG6211
             {
                 for (int i = 0; i < citiesSelected.Count; i++)
                 {
-                    for (int j = 0; j < vars.getCityNameCount(); j++)
+                    for (int j = 0; j < getCityNameCount(); j++)
                     {
-                        if (vars.getCityName(j) == Convert.ToString(citiesSelected[i]))
+                        if (getCityName(j) == Convert.ToString(citiesSelected[i]))
                         {
-                            if (vars.getWeatherDate(j) >= startDateBox.Value && vars.getWeatherDate(j) <= endDateBox.Value)
+                            if (getWeatherDate(j) >= startDateBox.Value && getWeatherDate(j) <= endDateBox.Value)
                             {
                                 if (reportTable.Rows.Count == 0)
                                 {
                                     //Initiate values in the lowest and highest section
-                                    lowMinTemp = Convert.ToInt32(vars.getMinTemp(j));
-                                    highMinTemp = Convert.ToInt32(vars.getMinTemp(j));
-                                    lowMaxTemp = Convert.ToInt32(vars.getMaxTemp(j));
-                                    highMaxTemp = Convert.ToInt32(vars.getMaxTemp(j));
-                                    lowPrecip = Convert.ToInt32(vars.getPrecipitation(j));
-                                    highPrecip = Convert.ToInt32(vars.getPrecipitation(j));
-                                    lowHumid = Convert.ToInt32(vars.getHumidity(j));
-                                    highHumid = Convert.ToInt32(vars.getHumidity(j));
-                                    lowSpeed = Convert.ToInt32(vars.getWindSpeed(j));
-                                    highSpeed = Convert.ToInt32(vars.getWindSpeed(j));
+                                    lowMinTemp = Convert.ToInt32(getMinTemp(j));
+                                    highMinTemp = Convert.ToInt32(getMinTemp(j));
+                                    lowMaxTemp = Convert.ToInt32(getMaxTemp(j));
+                                    highMaxTemp = Convert.ToInt32(getMaxTemp(j));
+                                    lowPrecip = Convert.ToInt32(getPrecipitation(j));
+                                    highPrecip = Convert.ToInt32(getPrecipitation(j));
+                                    lowHumid = Convert.ToInt32(getHumidity(j));
+                                    highHumid = Convert.ToInt32(getHumidity(j));
+                                    lowSpeed = Convert.ToInt32(getWindSpeed(j));
+                                    highSpeed = Convert.ToInt32(getWindSpeed(j));
                                 }
                                 else
                                 {
                                     //Update values if lowest and highest section not empty
-                                    if (Convert.ToInt32(vars.getMinTemp(j)) < lowMinTemp)
+                                    if (Convert.ToInt32(getMinTemp(j)) < lowMinTemp)
                                     {
-                                        lowMinTemp = Convert.ToInt32(vars.getMinTemp(j));
+                                        lowMinTemp = Convert.ToInt32(getMinTemp(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getMinTemp(j)) > highMinTemp)
+                                    if (Convert.ToInt32(getMinTemp(j)) > highMinTemp)
                                     {
-                                        highMinTemp = Convert.ToInt32(vars.getMinTemp(j));
+                                        highMinTemp = Convert.ToInt32(getMinTemp(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getMaxTemp(j)) < lowMaxTemp)
+                                    if (Convert.ToInt32(getMaxTemp(j)) < lowMaxTemp)
                                     {
-                                        lowMaxTemp = Convert.ToInt32(vars.getMaxTemp(j));
+                                        lowMaxTemp = Convert.ToInt32(getMaxTemp(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getMaxTemp(j)) > highMaxTemp)
+                                    if (Convert.ToInt32(getMaxTemp(j)) > highMaxTemp)
                                     {
-                                        highMaxTemp = Convert.ToInt32(vars.getMaxTemp(j));
+                                        highMaxTemp = Convert.ToInt32(getMaxTemp(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getPrecipitation(j)) < lowPrecip)
+                                    if (Convert.ToInt32(getPrecipitation(j)) < lowPrecip)
                                     {
-                                        lowPrecip = Convert.ToInt32(vars.getPrecipitation(j));
+                                        lowPrecip = Convert.ToInt32(getPrecipitation(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getPrecipitation(j)) > highPrecip)
+                                    if (Convert.ToInt32(getPrecipitation(j)) > highPrecip)
                                     {
-                                        highPrecip = Convert.ToInt32(vars.getPrecipitation(j));
+                                        highPrecip = Convert.ToInt32(getPrecipitation(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getHumidity(j)) < lowHumid)
+                                    if (Convert.ToInt32(getHumidity(j)) < lowHumid)
                                     {
-                                        lowHumid = Convert.ToInt32(vars.getHumidity(j));
+                                        lowHumid = Convert.ToInt32(getHumidity(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getHumidity(j)) > highHumid)
+                                    if (Convert.ToInt32(getHumidity(j)) > highHumid)
                                     {
-                                        highHumid = Convert.ToInt32(vars.getHumidity(j));
+                                        highHumid = Convert.ToInt32(getHumidity(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getWindSpeed(j)) < lowSpeed)
+                                    if (Convert.ToInt32(getWindSpeed(j)) < lowSpeed)
                                     {
-                                        lowSpeed = Convert.ToInt32(vars.getWindSpeed(j));
+                                        lowSpeed = Convert.ToInt32(getWindSpeed(j));
                                     }
 
-                                    if (Convert.ToInt32(vars.getWindSpeed(j)) > highSpeed)
+                                    if (Convert.ToInt32(getWindSpeed(j)) > highSpeed)
                                     {
-                                        highSpeed = Convert.ToInt32(vars.getWindSpeed(j));
+                                        highSpeed = Convert.ToInt32(getWindSpeed(j));
                                     }
                                 }
                                 //Populate the table with the report
-                                reportTable.Rows.Add(vars.getCityName(j), vars.getWeatherDate(j).ToShortDateString(), vars.getMinTemp(j), vars.getMaxTemp(j), vars.getPrecipitation(j), vars.getHumidity(j), vars.getWindSpeed(j));
+                                reportTable.Rows.Add(getCityName(j), getWeatherDate(j).ToShortDateString(), getMinTemp(j), getMaxTemp(j), getPrecipitation(j), getHumidity(j), getWindSpeed(j));
 
                                 lowestMinTemp.Text = Convert.ToString(lowMinTemp) + " °C";
                                 highestMinTemp.Text = Convert.ToString(highMinTemp) + " °C";

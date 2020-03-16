@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
+using System.Windows.Forms;
 
 namespace Task1_19003041_PROG6211
 {
-    internal class Weather
+    public class Weather : Form
     {
         private ArrayList cityNames = new ArrayList();
         private ArrayList weatherDates = new ArrayList();
