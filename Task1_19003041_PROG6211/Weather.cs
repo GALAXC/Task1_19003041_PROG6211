@@ -1,95 +1,94 @@
 ﻿using System;
 using System.Collections;
-using System.Windows.Forms;
 
 namespace Task1_19003041_PROG6211
 {
-    public class Weather : Form
+    public static class Weather
     {
-        private ArrayList cityNames = new ArrayList();
-        private ArrayList weatherDates = new ArrayList();
-        private ArrayList minTemps = new ArrayList();
-        private ArrayList maxTemps = new ArrayList();
-        private ArrayList precips = new ArrayList();
-        private ArrayList humidities = new ArrayList();
-        private ArrayList windSpeeds = new ArrayList();
+        private static ArrayList cityNames = new ArrayList();
+        private static ArrayList weatherDates = new ArrayList();
+        private static ArrayList minTemps = new ArrayList();
+        private static ArrayList maxTemps = new ArrayList();
+        private static ArrayList precips = new ArrayList();
+        private static ArrayList humidities = new ArrayList();
+        private static ArrayList windSpeeds = new ArrayList();
 
-        public void addWeatherDate(object value)
+        public static void addWeatherDate(object value)
         {
             weatherDates.Add(value);
         }
 
-        public DateTime getWeatherDate(int value)
+        public static DateTime getWeatherDate(int value)
         {
             return Convert.ToDateTime(weatherDates[value]);
         }
 
-        public void addMinTemp(object value)
+        public static void addMinTemp(object value)
         {
             minTemps.Add(value);
         }
 
-        public string getMinTemp(int value)
+        public static string getMinTemp(int value)
         {
             return Convert.ToString(minTemps[value]);
         }
 
-        public void addMaxTemp(object value)
+        public static void addMaxTemp(object value)
         {
             maxTemps.Add(value);
         }
 
-        public string getMaxTemp(int value)
+        public static string getMaxTemp(int value)
         {
             return Convert.ToString(maxTemps[value]);
         }
 
-        public void addPrecipitation(object value)
+        public static void addPrecipitation(object value)
         {
             precips.Add(value);
         }
 
-        public string getPrecipitation(int value)
+        public static string getPrecipitation(int value)
         {
             return Convert.ToString(precips[value]);
         }
 
-        public void addHumidity(object value)
+        public static void addHumidity(object value)
         {
             humidities.Add(value);
         }
 
-        public string getHumidity(int value)
+        public static string getHumidity(int value)
         {
             return Convert.ToString(humidities[value]);
         }
 
-        public void addWindSpeed(object value)
+        public static void addWindSpeed(object value)
         {
             windSpeeds.Add(value);
         }
 
-        public string getWindSpeed(int value)
+        public static string getWindSpeed(int value)
         {
             return Convert.ToString(windSpeeds[value]);
         }
 
-        public void addCityName(object value)
+        public static void addCityName(object value)
         {
             cityNames.Add(value);
         }
 
-        public string getCityName(int value)
+        public static string getCityName(int value)
         {
             return Convert.ToString(cityNames[value]);
         }
 
-        public int getCityNameCount()
+        public static int getCityNameCount()
         {
             return cityNames.Count;
         }
 
-        public void populateArrayLists()
+        public static void populateArrayLists()
         {
             cityNames.Add("Cape Town");
             cityNames.Add("Cape Town");

@@ -46,19 +46,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Weather.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WeatherForecaster.cs">
+    <Compile Include="Capture.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WeatherForecaster.Designer.cs">
-      <DependentUpon>WeatherForecaster.cs</DependentUpon>
+    <Compile Include="Capture.Designer.cs">
+      <DependentUpon>Capture.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="WeatherForecaster.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="WeatherForecaster.resx">
-      <DependentUpon>WeatherForecaster.cs</DependentUpon>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capture.resx">
+      <DependentUpon>Capture.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
