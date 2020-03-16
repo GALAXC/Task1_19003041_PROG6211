@@ -12,11 +12,6 @@ namespace Task1_19003041_PROG6211
 
         private bool valuesGood = true;
 
-        private void Capture_Load(object sender, EventArgs e)
-        {
-            Weather.populateArrayLists();
-        }
-
         //
         //Capture section Code
         //

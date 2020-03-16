@@ -412,13 +412,11 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Capture";
-            this.Text = "Weather Forecaster - Capture";
-            this.Load += new System.EventHandler(this.Capture_Load);
+            this.Text = "Weather Forecaster - Capture";            
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
