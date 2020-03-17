@@ -92,7 +92,7 @@ namespace Task1_19003041_PROG6211
         //For city box
         private void CityBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if (!char.IsLetter(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '-')
             {
                 e.Handled = true;
                 MessageBox.Show("You may only enter alphabetical letters into this box.");

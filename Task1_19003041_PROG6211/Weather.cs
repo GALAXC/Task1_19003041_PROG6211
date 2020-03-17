@@ -13,6 +13,7 @@ namespace Task1_19003041_PROG6211
         private static ArrayList humidities = new ArrayList();
         private static ArrayList windSpeeds = new ArrayList();
 
+        //Getters and Setters
         public static void addWeatherDate(object value)
         {
             weatherDates.Add(value);
@@ -88,6 +89,7 @@ namespace Task1_19003041_PROG6211
             return cityNames.Count;
         }
 
+        //Test values for program
         public static void populateArrayLists()
         {
             cityNames.Add("Cape Town");

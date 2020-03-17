@@ -60,6 +60,7 @@
             // 
             // cityBox
             // 
+            this.cityBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cityBox.AutoCompleteCustomSource.AddRange(new string[] {
             "Alexandra",
             "Bellville",
@@ -129,6 +130,7 @@
             // 
             // minTempBox
             // 
+            this.minTempBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.minTempBox.Location = new System.Drawing.Point(96, 166);
             this.minTempBox.MaxLength = 3;
             this.minTempBox.Name = "minTempBox";
@@ -140,6 +142,7 @@
             // 
             // maxTempBox
             // 
+            this.maxTempBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.maxTempBox.Location = new System.Drawing.Point(96, 192);
             this.maxTempBox.MaxLength = 3;
             this.maxTempBox.Name = "maxTempBox";
@@ -151,6 +154,7 @@
             // 
             // precipBox
             // 
+            this.precipBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.precipBox.Location = new System.Drawing.Point(96, 218);
             this.precipBox.MaxLength = 3;
             this.precipBox.Name = "precipBox";
@@ -162,6 +166,7 @@
             // 
             // humidBox
             // 
+            this.humidBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.humidBox.Location = new System.Drawing.Point(96, 244);
             this.humidBox.MaxLength = 3;
             this.humidBox.Name = "humidBox";
@@ -173,6 +178,7 @@
             // 
             // windBox
             // 
+            this.windBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.windBox.Location = new System.Drawing.Point(96, 270);
             this.windBox.MaxLength = 3;
             this.windBox.Name = "windBox";
@@ -184,6 +190,7 @@
             // 
             // cityLabel
             // 
+            this.cityLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cityLabel.AutoSize = true;
             this.cityLabel.BackColor = System.Drawing.Color.Transparent;
             this.cityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,6 +202,7 @@
             // 
             // dateLabel
             // 
+            this.dateLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateLabel.AutoSize = true;
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -206,6 +214,7 @@
             // 
             // minTempLabel
             // 
+            this.minTempLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.minTempLabel.AutoSize = true;
             this.minTempLabel.BackColor = System.Drawing.Color.Transparent;
             this.minTempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,6 +226,7 @@
             // 
             // maxTempLabel
             // 
+            this.maxTempLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.maxTempLabel.AutoSize = true;
             this.maxTempLabel.BackColor = System.Drawing.Color.Transparent;
             this.maxTempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,6 +238,7 @@
             // 
             // precipLabel
             // 
+            this.precipLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.precipLabel.AutoSize = true;
             this.precipLabel.BackColor = System.Drawing.Color.Transparent;
             this.precipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,6 +250,7 @@
             // 
             // humidityLabel
             // 
+            this.humidityLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.humidityLabel.AutoSize = true;
             this.humidityLabel.BackColor = System.Drawing.Color.Transparent;
             this.humidityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -250,6 +262,7 @@
             // 
             // windSpeedLabel
             // 
+            this.windSpeedLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.windSpeedLabel.AutoSize = true;
             this.windSpeedLabel.BackColor = System.Drawing.Color.Transparent;
             this.windSpeedLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -261,6 +274,7 @@
             // 
             // submitButton
             // 
+            this.submitButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.submitButton.Location = new System.Drawing.Point(177, 310);
             this.submitButton.Name = "submitButton";
             this.submitButton.Size = new System.Drawing.Size(75, 23);
@@ -271,6 +285,7 @@
             // 
             // dateInputBox
             // 
+            this.dateInputBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dateInputBox.Location = new System.Drawing.Point(96, 140);
             this.dateInputBox.Name = "dateInputBox";
             this.dateInputBox.Size = new System.Drawing.Size(200, 20);
@@ -278,6 +293,7 @@
             // 
             // reportLabel
             // 
+            this.reportLabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.reportLabel.AutoSize = true;
             this.reportLabel.BackColor = System.Drawing.Color.Transparent;
             this.reportLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -289,6 +305,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(138, 169);
@@ -299,6 +316,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(138, 195);
@@ -309,6 +327,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Location = new System.Drawing.Point(141, 221);
@@ -319,6 +338,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(141, 247);
@@ -329,6 +349,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Location = new System.Drawing.Point(141, 273);
@@ -339,6 +360,7 @@
             // 
             // clearButton
             // 
+            this.clearButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.clearButton.Location = new System.Drawing.Point(65, 310);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
@@ -369,7 +391,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -412,11 +434,12 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Capture";
-            this.Text = "Weather Forecaster - Capture";            
+            this.Text = "Weather Forecaster - Capture";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

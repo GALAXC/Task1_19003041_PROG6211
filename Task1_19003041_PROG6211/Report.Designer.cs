@@ -82,6 +82,7 @@
             // 
             // clearCitiesSelected
             // 
+            this.clearCitiesSelected.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.clearCitiesSelected.Location = new System.Drawing.Point(765, 102);
             this.clearCitiesSelected.Name = "clearCitiesSelected";
             this.clearCitiesSelected.Size = new System.Drawing.Size(46, 23);
@@ -92,6 +93,7 @@
             // 
             // lowestMaxTemp
             // 
+            this.lowestMaxTemp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lowestMaxTemp.AutoSize = true;
             this.lowestMaxTemp.BackColor = System.Drawing.Color.Transparent;
             this.lowestMaxTemp.Location = new System.Drawing.Point(903, 276);
@@ -101,6 +103,7 @@
             // 
             // label23
             // 
+            this.label23.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label23.AutoSize = true;
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Location = new System.Drawing.Point(836, 276);
@@ -111,6 +114,7 @@
             // 
             // highestMaxTemp
             // 
+            this.highestMaxTemp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.highestMaxTemp.AutoSize = true;
             this.highestMaxTemp.BackColor = System.Drawing.Color.Transparent;
             this.highestMaxTemp.Location = new System.Drawing.Point(1043, 276);
@@ -120,6 +124,7 @@
             // 
             // label21
             // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Location = new System.Drawing.Point(977, 276);
@@ -130,6 +135,7 @@
             // 
             // label22
             // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
             this.label22.Location = new System.Drawing.Point(980, 252);
@@ -140,6 +146,7 @@
             // 
             // highestWind
             // 
+            this.highestWind.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.highestWind.AutoSize = true;
             this.highestWind.BackColor = System.Drawing.Color.Transparent;
             this.highestWind.Location = new System.Drawing.Point(1043, 350);
@@ -149,6 +156,7 @@
             // 
             // highestHumid
             // 
+            this.highestHumid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.highestHumid.AutoSize = true;
             this.highestHumid.BackColor = System.Drawing.Color.Transparent;
             this.highestHumid.Location = new System.Drawing.Point(1043, 325);
@@ -158,6 +166,7 @@
             // 
             // highestPrecip
             // 
+            this.highestPrecip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.highestPrecip.AutoSize = true;
             this.highestPrecip.BackColor = System.Drawing.Color.Transparent;
             this.highestPrecip.Location = new System.Drawing.Point(1043, 300);
@@ -167,6 +176,7 @@
             // 
             // highestMinTemp
             // 
+            this.highestMinTemp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.highestMinTemp.AutoSize = true;
             this.highestMinTemp.BackColor = System.Drawing.Color.Transparent;
             this.highestMinTemp.Location = new System.Drawing.Point(1043, 252);
@@ -176,6 +186,7 @@
             // 
             // lowestWind
             // 
+            this.lowestWind.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lowestWind.AutoSize = true;
             this.lowestWind.BackColor = System.Drawing.Color.Transparent;
             this.lowestWind.Location = new System.Drawing.Point(903, 350);
@@ -185,6 +196,7 @@
             // 
             // lowestHumid
             // 
+            this.lowestHumid.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lowestHumid.AutoSize = true;
             this.lowestHumid.BackColor = System.Drawing.Color.Transparent;
             this.lowestHumid.Location = new System.Drawing.Point(903, 325);
@@ -194,6 +206,7 @@
             // 
             // lowestPrecip
             // 
+            this.lowestPrecip.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lowestPrecip.AutoSize = true;
             this.lowestPrecip.BackColor = System.Drawing.Color.Transparent;
             this.lowestPrecip.Location = new System.Drawing.Point(903, 300);
@@ -203,6 +216,7 @@
             // 
             // lowestMinTemp
             // 
+            this.lowestMinTemp.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lowestMinTemp.AutoSize = true;
             this.lowestMinTemp.BackColor = System.Drawing.Color.Transparent;
             this.lowestMinTemp.Location = new System.Drawing.Point(903, 252);
@@ -212,6 +226,7 @@
             // 
             // label18
             // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Location = new System.Drawing.Point(968, 350);
@@ -222,6 +237,7 @@
             // 
             // label19
             // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Location = new System.Drawing.Point(987, 325);
@@ -232,6 +248,7 @@
             // 
             // label20
             // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Location = new System.Drawing.Point(969, 300);
@@ -242,6 +259,7 @@
             // 
             // label17
             // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Location = new System.Drawing.Point(827, 350);
@@ -252,6 +270,7 @@
             // 
             // label15
             // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Location = new System.Drawing.Point(846, 325);
@@ -262,6 +281,7 @@
             // 
             // label16
             // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Location = new System.Drawing.Point(828, 300);
@@ -272,6 +292,7 @@
             // 
             // label14
             // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Location = new System.Drawing.Point(839, 252);
@@ -282,6 +303,7 @@
             // 
             // label13
             // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -293,6 +315,7 @@
             // 
             // label12
             // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -304,6 +327,7 @@
             // 
             // label11
             // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -315,6 +339,7 @@
             // 
             // searchButton
             // 
+            this.searchButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.searchButton.Location = new System.Drawing.Point(65, 319);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(75, 23);
@@ -329,6 +354,7 @@
             this.reportTable.AllowUserToDeleteRows = false;
             this.reportTable.AllowUserToResizeColumns = false;
             this.reportTable.AllowUserToResizeRows = false;
+            this.reportTable.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.reportTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.reportTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.City,
@@ -415,6 +441,7 @@
             // 
             // datesSelected
             // 
+            this.datesSelected.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.datesSelected.AutoSize = true;
             this.datesSelected.BackColor = System.Drawing.Color.Transparent;
             this.datesSelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -426,6 +453,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -437,6 +465,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -448,6 +477,7 @@
             // 
             // endDateBox
             // 
+            this.endDateBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.endDateBox.Location = new System.Drawing.Point(10, 262);
             this.endDateBox.Name = "endDateBox";
             this.endDateBox.Size = new System.Drawing.Size(211, 20);
@@ -457,6 +487,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -468,6 +499,7 @@
             // 
             // startDateBox
             // 
+            this.startDateBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.startDateBox.Location = new System.Drawing.Point(10, 188);
             this.startDateBox.Name = "startDateBox";
             this.startDateBox.Size = new System.Drawing.Size(211, 20);
@@ -477,6 +509,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -488,6 +521,7 @@
             // 
             // cityReportBox
             // 
+            this.cityReportBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cityReportBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityReportBox.Location = new System.Drawing.Point(359, 93);
             this.cityReportBox.MaximumSize = new System.Drawing.Size(400, 4);
@@ -501,6 +535,7 @@
             // 
             // cityComboBox
             // 
+            this.cityComboBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cityComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cityComboBox.FormattingEnabled = true;
             this.cityComboBox.Location = new System.Drawing.Point(10, 114);
@@ -531,7 +566,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
